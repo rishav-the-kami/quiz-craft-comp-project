@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import Homepage
-import mysql.connector # type: ignore
+import mysql.connector
 
 mydb = mysql.connector.connect(
     host="localhost",
@@ -71,3 +71,4 @@ class LoginWindow:
         self.window.destroy()
 
         self.return_callback()
+
