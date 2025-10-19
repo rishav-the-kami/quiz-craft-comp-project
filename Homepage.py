@@ -8,7 +8,7 @@ from tkinter import ttk
 mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="p@$$word12",
+        password="password for sql",
         database="quiz-craft-db",
         auth_plugin='mysql_native_password'
     )
@@ -90,4 +90,5 @@ class Homepagewindow:
 
     def open_quiz_builder(self):
         self.window.withdraw()
+
         quizbuilder.QuizMaker(self.window, self.name, self.id)
