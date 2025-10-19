@@ -6,7 +6,7 @@ try:
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="p@$$word12",
+        password="password for sql",
         database="quiz-craft-db",
         auth_plugin='mysql_native_password'
     )
@@ -134,4 +134,5 @@ try:
         #         Homepage.Homepagewindow(self.name, self.user_id)
                 
 except Exception as e:
+
     print(e)
