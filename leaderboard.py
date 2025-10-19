@@ -6,7 +6,7 @@ import Homepage
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="p@$$word12",
+    password="password for sql",
     database="quiz-craft-db",
     auth_plugin='mysql_native_password'
 )
@@ -52,5 +52,6 @@ class Leaderboard():
             label_right = tk.Label(container, text=str(i[0]))
             label_right.pack(side="right")
             
+
 
             
